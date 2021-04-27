@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        .bg-dark img {
+            height: 40px;
+            width: 40px;
+        }
+
+        .dropdown-menu li a:hover {
+            background-color: lightgray;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <img src="data:image/png;base64,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"
+                alt="">
+            <a class="navbar-brand" href="#">iTech</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Topics
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a class="dropdown-item" href="#">Web Development</a></li>
+                            <li><a class="dropdown-item" href="#">Machine Learning</a></li>
+                            <li><a class="dropdown-item" href="#">Data Science</li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Your Suggestions</a></li>
+                            <li><a class="dropdown-item" href="#">Your Reviews</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Our Partners</a>
+                    </li>
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./fruit.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3><strong> Welcome to iTech</strong></h3>
+                    <div>
+                        <h8>Web Develpment, Data Science, Java</h8>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary">Technology</button>
+                    <button class="btn btn-danger">Java</button>
+                    <button class="btn btn-success">Python</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./new2.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3><strong> The best Coding platform</strong></h3>
+                    <div>
+                        <h8>Leran, Explore, Grow</h8>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary">Technology</button>
+                    <button class="btn btn-danger">Java</button>
+                    <button class="btn btn-success">Python</button>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./new4.jpeg" class="d-block w-100" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                    <h3><strong>Best for Backend Technology</strong></h3>
+                    <div>
+                        <h8>Spring Boot, Node, Express</h8>
+                    </div>
+                    <br>
+                    <button class="btn btn-primary">Technology</button>
+                    <button class="btn btn-danger">Java</button>
+                    <button class="btn btn-success">Python</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf"
+        crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js" integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.min.js" integrity="sha384-j0CNLUeiqtyaRmlzUHCPZ+Gy5fQu0dQ6eZ/xAww941Ai1SxSY+0EQqNXNE6DZiVc" crossorigin="anonymous"></script>
+    -->
+</body>
+
+</html>
